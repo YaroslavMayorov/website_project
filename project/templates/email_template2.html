@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 10px;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.6rem;
+        }
+
+    </style>
+</head>
+<body>
+<section>
+    <div style="margin-top: 20px" class="container">
+        <center><p style="font-size: 22px"> <b>Здравствуйте, &ensp;{{ name }}</b></p></center>
+        <center><p> Спасибо за выбор ArtHouseRooms. Пожалуйста, проверьте данные бронирования! </p> </center>
+        <center><p> Если что-то не так, напишите на почту arthouserooms@gmail.com или позвоните по номеру
+            +7&nbsp;(812)&nbsp;764&#8209;76&#8209;95 </p></center>
+        <center><p style="font-size: 22px"><b>Данные бронирования</b></p></center>
+        <center><p> Фамилия: &ensp;{{ surname }} </p></center>
+        <center><p> Имя: &ensp;{{ name }} </p></center>
+        <center><p> Отчество: &ensp;{{ father_name }} </p></center>
+        <center><p> Номер: &ensp;{{ room }} </p></center>
+        <center><p> Дата заезда: &ensp;{{ in_date }} </p></center>
+        <center><p> Дата выезда: &ensp;{{ out_date }} </p></center>
+        <center><p> Количество человек: &ensp;{{ people }} </p></center>
+        <center><p> Стоимость (без учета позднего выезда): &ensp;{{ cost }}₽</p></center>
+        <center><p> Телефон: &ensp;{{ phone }} </p></center>
+        <center><p> Время заезда: &ensp;{{ time_in }} </p></center>
+        <center><p> Время выезда: &ensp;{{ time_out }} </p></center>
+        <center><p style="font-size: 22px"> Итого: {{ total }}₽ </p></center>
+        <center><p> Оплата при заселении </p></center>
+    </div>
+</section>
+</body>
+</html>

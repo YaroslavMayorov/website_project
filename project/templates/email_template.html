@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <style>
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 10px;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.6rem;
+            color: #2d2c2c;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .name  {
+            color: #fa9e2c;
+        }
+        .booking {
+            width: 122%;
+            height: 100%;
+            display: flex;
+            margin-top: -5rem;
+            margin-left: -4rem;
+        }
+
+        .container {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .container2 {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            margin-top: 9rem;
+            color: #fff;
+            font-weight: bold;
+            left: 0;
+            right: 0;
+        }
+
+        .header {
+            width: 100%;
+            height: 6rem;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: rgba(53, 10, 79, .7);
+            z-index: 999;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+<section class="booking" style="background-image: linear-gradient(to right, #fa9e2c, #8f50fb);">
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+            </nav>
+        </div>
+    </header>
+    <div class="container2">
+        <center><p style="font-size: 22px; margin-top: 2rem;"> Здравствуйте, <span class="name">&ensp;{{ name }}
+        </span></p></center>
+        <center><p> Спасибо за выбор ArtHouseRooms. Пожалуйста, проверьте данные бронирования! </p> </center>
+        <center><p> Если что-то не так, напишите на почту arthouserooms@gmail.com или позвоните по номеру
+            +7&nbsp;(812)&nbsp;764&#8209;76&#8209;95 </p></center>
+        <center><p style="font-size: 22px;">Данные бронирования</p></center>
+        <center><p> Фамилия: &ensp;<span class="name"> {{ surname }} </span></p></center>
+        <center><p> Имя: &ensp;<span class="name">{{ name }} </span></p></center>
+        <center><p> Отчество: &ensp;<span class="name">{{ father_name }} </span></p></center>
+        <center><p> Номер: &ensp;<span class="name">{{ room }} </span></p></center>
+        <center><p> Дата заезда: &ensp;<span class="name">{{ in_date }} </span></p></center>
+        <center><p> Дата выезда: &ensp;<span class="name">{{ out_date }} </span></p></center>
+        <center><p> Количество человек: &ensp;<span class="name">{{ people }} </span></p></center>
+        <center><p> Стоимость (без учета позднего выезда): &ensp;<span class="name">{{ cost }}₽</span></p></center>
+        <center><p> Телефон: &ensp;<span class="name">{{ phone }} </span></p></center>
+        <center><p> Время заезда: &ensp;<span class="name">{{ time_in }} </span></p></center>
+        <center><p> Время выезда: &ensp;<span class="name">{{ time_out }} </span></p></center>
+        <center><p> Дополнительные комментарии: &ensp;<span class="name">{{ comments }} </span></p></center>
+        <center><p style="font-size: 22px"> Итого: <span class="name">{{ total }}₽ </span> </p></center>
+        <center><p> Оплата при заселении </p></center>
+    </div>
+</section>
+</body>
+</html>
